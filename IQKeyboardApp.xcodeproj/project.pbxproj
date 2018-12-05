@@ -12,9 +12,11 @@
 		4B4702DD21B7BBB300A2C24B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4702DB21B7BBB300A2C24B /* Main.storyboard */; };
 		4B4702DF21B7BBB400A2C24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4702DE21B7BBB400A2C24B /* Assets.xcassets */; };
 		4B4702E221B7BBB400A2C24B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4702E021B7BBB400A2C24B /* LaunchScreen.storyboard */; };
+		D315D99A0A5A0F631BD1A569 /* Pods_IQKeyboardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026A69DF7A6111DFEC61F6C /* Pods_IQKeyboardApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40A79245970B6932BBC73C1D /* Pods-IQKeyboardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IQKeyboardApp/Pods-IQKeyboardApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4B4702D421B7BBB300A2C24B /* IQKeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IQKeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4702D721B7BBB300A2C24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4702D921B7BBB300A2C24B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4B4702DE21B7BBB400A2C24B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B4702E121B7BBB400A2C24B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B4702E321B7BBB400A2C24B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7026A69DF7A6111DFEC61F6C /* Pods_IQKeyboardApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IQKeyboardApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78368DEAD5EA160155A0E89 /* Pods-IQKeyboardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IQKeyboardApp/Pods-IQKeyboardApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D315D99A0A5A0F631BD1A569 /* Pods_IQKeyboardApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29E1BD47F02021C51DBEF515 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40A79245970B6932BBC73C1D /* Pods-IQKeyboardApp.debug.xcconfig */,
+				A78368DEAD5EA160155A0E89 /* Pods-IQKeyboardApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4B4702CB21B7BBB300A2C24B = {
 			isa = PBXGroup;
 			children = (
 				4B4702D621B7BBB300A2C24B /* IQKeyboardApp */,
 				4B4702D521B7BBB300A2C24B /* Products */,
+				29E1BD47F02021C51DBEF515 /* Pods */,
+				A9995EA36FB8191B34AA3883 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = IQKeyboardApp;
 			sourceTree = "<group>";
 		};
+		A9995EA36FB8191B34AA3883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7026A69DF7A6111DFEC61F6C /* Pods_IQKeyboardApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B4702E621B7BBB400A2C24B /* Build configuration list for PBXNativeTarget "IQKeyboardApp" */;
 			buildPhases = (
+				7DE97676F81AC8DE4DCC1A0E /* [CP] Check Pods Manifest.lock */,
 				4B4702D021B7BBB300A2C24B /* Sources */,
 				4B4702D121B7BBB300A2C24B /* Frameworks */,
 				4B4702D221B7BBB300A2C24B /* Resources */,
+				0E19DF7CDA4A358D48943240 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E19DF7CDA4A358D48943240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IQKeyboardApp/Pods-IQKeyboardApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQKeyboardApp/Pods-IQKeyboardApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE97676F81AC8DE4DCC1A0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IQKeyboardApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B4702D021B7BBB300A2C24B /* Sources */ = {
@@ -280,9 +353,11 @@
 		};
 		4B4702E721B7BBB400A2C24B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A79245970B6932BBC73C1D /* Pods-IQKeyboardApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6XYP69L55;
 				INFOPLIST_FILE = IQKeyboardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +372,11 @@
 		};
 		4B4702E821B7BBB400A2C24B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A78368DEAD5EA160155A0E89 /* Pods-IQKeyboardApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6XYP69L55;
 				INFOPLIST_FILE = IQKeyboardApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
